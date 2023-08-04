@@ -6,7 +6,8 @@ async function serve() {
 
     const server = new Koa({ proxy: !dev })
     const router = new Router()
-    router.get('/api/ip', ctx => {
+    
+    router.get('/', ctx => {
         ctx.body = ctx.ip
     })
     server.use(router.routes())
