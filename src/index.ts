@@ -10,6 +10,9 @@ export function createApp() {
     router.get('/', ctx => {
         ctx.body = ctx.ip
     })
+    router.get('/api/koa', ctx => {
+        ctx.body = ctx.ip
+    })
     server.use(router.routes())
     return server
 }

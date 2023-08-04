@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { createApp } from "./koa"
+import { createApp } from "../src"
 
 function createHandler() {
     const app = createApp()
