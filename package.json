@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/index.js",
+    "dev": "NODE_ENV=development ts-node src/app.ts",
     "vercel:login": "vercel login",
     "vercel:dev": "vercel dev",
     "vercel:prod": "vercel --prod"
@@ -13,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "ts-node": "^10.9.1",
     "typescript": "^5.1.6",
     "vercel": "^31.2.2"
   },
