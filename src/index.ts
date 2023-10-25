@@ -8,7 +8,7 @@ export function createApp() {
     const router = new Router()
 
     router.get('/', ctx => {
-        ctx.body = ctx.request.ips[0]
+        ctx.body = ctx.headers['cf-connecting-ip']
     })
     
     server.use(router.routes())
