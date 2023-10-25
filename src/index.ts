@@ -8,7 +8,7 @@ export function createApp() {
     const router = new Router()
 
     router.get('/', ctx => {
-        ctx.body = ctx.ip
+        ctx.body = ctx.request.ips[0]
     })
     
     server.use(router.routes())
